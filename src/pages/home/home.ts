@@ -17,7 +17,7 @@ export class HomePage {
     this.divContent = '';
   }
 
-  logEvent(userIndex: string) {
+  reqeustUserInfo(userIndex: string) {
     this.divContent = 'Loading..';
     const usersStub = this.stubFactory.createStub(Stubs.Users);
     usersStub.setCustomConfigs({index: userIndex});
